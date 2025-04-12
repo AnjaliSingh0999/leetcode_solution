@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public int maxDistance(int[] position, int m) {
         Arrays.sort(position);
@@ -11,9 +9,9 @@ class Solution {
             int mid = left + (right - left) / 2;
             if (canPlaceBalls(position, m, mid)) {
                 result = mid;
-                left = mid + 1;  // try for bigger distance
+                left = mid + 1;  
             } else {
-                right = mid - 1; // try for smaller distance
+                right = mid - 1; 
             }
         }
 
@@ -21,7 +19,7 @@ class Solution {
     }
 
     private boolean canPlaceBalls(int[] position, int m, int minDist) {
-        int count = 1; // first ball is placed
+        int count = 1; 
         int lastPos = position[0];
 
         for (int i = 1; i < position.length; i++) {
