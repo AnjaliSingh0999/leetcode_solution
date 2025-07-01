@@ -1,6 +1,6 @@
 class Solution {
-    PriorityQueue<Integer> left = new PriorityQueue<>(Collections.reverseOrder()); // max-heap
-    PriorityQueue<Integer> right = new PriorityQueue<>(); // min-heap
+    PriorityQueue<Integer> left = new PriorityQueue<>(Collections.reverseOrder());  
+    PriorityQueue<Integer> right = new PriorityQueue<>();  
     Map<Integer, Integer> delayed = new HashMap<>();
     int leftSize = 0, rightSize = 0;
 
